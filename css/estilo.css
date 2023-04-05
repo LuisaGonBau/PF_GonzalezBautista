@@ -53,7 +53,7 @@ h2 {font-size: 24px; line-height: 1.4; margin-bottom: 30px; color: #0f0f0f;}
   
 #presentación {font-size: 36px; margin-bottom: 50px; text-align: center; border: 10px solid #ECE890;color: #D4AF37; padding: 20px;}
   
-#experienciachocolu {margin-top: 50px; margin-bottom: 0;}
+#experienciachocolu {margin-top: 50px; margin-bottom: 0; text-align: center; color:#D4AF37}
 
 /*experiencia*/
 .gridexperiencia{display:grid; grid-template-columns: 100px, 100px; grid-template-rows: auto;}
@@ -86,7 +86,6 @@ h3 {text-align: center; font-family:Cambria, Cochin, Georgia, Times, 'Times New 
 #siguenos{color:#D4AF37}
 #sabores{ color: rgb(226, 43, 83);}
 #formas{color: rgb(226, 43, 83);}
-#experienciachocolu{text-align: center; color:#D4AF37}
 #contacto{text-align: left;color: blueviolet;}
 #video{width: 50%; flex-wrap: wrap;}
 
