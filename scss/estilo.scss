@@ -1,0 +1,92 @@
+/* General */
+li{list-style: none;padding: 20px;margin: 10px;}
+ul{display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly;}
+
+a{text-decoration: none;font-size: 20px; border-bottom: 1px solid --paginas; transition: all 0.2s;}
+
+/* PSEUDO :hover  */
+a:hover{font-size:22px;background-color:var(--paginas); padding:4px;border-radius:10px; color:#D4AF37}
+
+.mainnosotros{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+
+}
+
+/* Estilos para desktop */
+@media (min-width:1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dos columnas */
+        grid-template-areas: 
+          "chocolu presentacion"
+          "chocolu contenido"
+          "experiencia experiencia"; 
+        gap: 20px; 
+      }
+      .chocolu {grid-area: chocolu;}
+  
+      #presentación {grid-area: presentacion;}
+      
+      h2:nth-of-type(2) {grid-area: contenido;}
+      
+      #experienciachocolu {grid-area: experiencia;}
+    }
+    /* Estilos para mobile */
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr; /* Una sola columna en mobile */
+        grid-template-areas: 
+          "chocolu"
+          "presentacion"
+          "contenido"
+          "experiencia"; /* Cambiar la definición de áreas en mobile */
+      }
+    }          
+
+/* contenido principal */
+main {display: grid; grid-template-rows: auto auto auto; justify-items: center; align-items: center; padding: 20px; text-align: center; background-image: url("../img/fondo-chocolu.jpg"); background-size: cover;background-position: center center;}
+  
+.chocolu {text-align: center; max-width: 600px; margin-bottom: 20px;}
+h2 {font-size: 24px; line-height: 1.4; margin-bottom: 30px; color: #0f0f0f;}
+  
+#presentación {font-size: 36px; margin-bottom: 50px; text-align: center; border: 10px solid #ECE890;color: #D4AF37; padding: 20px;}
+  
+#experienciachocolu {margin-top: 50px; margin-bottom: 0; text-align: center; color:#D4AF37}
+
+/*experiencia*/
+.gridexperiencia{display:grid; grid-template-columns: 100px, 100px; grid-template-rows: auto;}
+
+/*Puntos físicos*/
+.card input:hover {box-shadow: 4px 5px 7px 0px rgba(195,137,39,0.67);
+    -webkit-box-shadow: 4px 5px 7px 0px rgba(195,137,39,0.67);
+    -moz-box-shadow: 4px 5px 7px 0px rgba(195,137,39,0.67);}
+  
+/*footer*/
+footer {background-color: #fcecca; border-top: 1px solid #ccc; padding: 20px;}
+#siguenos { font-size: 24px; margin-bottom: 20px;text-align: center;}
+  
+/*redes sociales */
+.gridredes { display: grid; grid-template-columns: repeat(3, auto); justify-content: center; align-items: center; }
+.redes ul {display: flex; flex-wrap: wrap; justify-content: center; align-items: center; list-style: none; margin: 0; padding: 0; }
+.redes img {margin-right: 10px;}
+
+/* titulos pages*/
+.mainnosotros h1, .mainpuntos h1{color: palevioletred;}
+.mainproductos h1, .mainexperiencia h1{ color: rgb(63, 7, 7);}
+.mainnosotros h3 {text-align:justify;}
+h1{text-align: center;}
+h3 {text-align: center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+
+.chocolu{text-align: center}
+.redes{text-align: center; font-size:20px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+.gridsabores, .formas{display: flex; justify-content: center; flex-wrap: wrap; align-items: center; border: 5px solid rgb(215, 180, 255);}
+.catalogo{text-align: center;}
+#siguenos{color:#D4AF37}
+#sabores{ color: rgb(226, 43, 83);}
+#formas{color: rgb(226, 43, 83);}
+#contacto{text-align: left;color: blueviolet;}
+#video{width: 50%; flex-wrap: wrap;}
+
+
